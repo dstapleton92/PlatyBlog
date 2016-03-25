@@ -1,0 +1,11 @@
+<h1>PlatyBlog</h1>
+<plat-button class="button-primary button-jumbo" plat-tap="goToCompose()">Compose</plat-button>
+<p>Alternatively, <plat-link plat-options="{ view: composeView }">click here</plat-link> to compose a new post.</p>
+<plat-foreach class="post-list" plat-context="posts">
+    <div class="post">
+        <h1>{{title}}</h1>
+        <h3>{{author}}</h3>
+        <h5>{{createdAt}}</h5>
+        <plat-button class="button-secondary" plat-tap="readMore(id)">Read more...</plat-button>
+    </div>
+</plat-foreach>

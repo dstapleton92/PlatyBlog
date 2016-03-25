@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "dependencies": {},
+  "devDependencies": {},
+  "ambientDependencies": {
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160317120654",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts",
+    "morgan": "github:DefinitelyTyped/DefinitelyTyped/morgan/morgan.d.ts",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts"
+  }
+}

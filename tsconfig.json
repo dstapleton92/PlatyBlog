@@ -1,0 +1,33 @@
+{
+    "lintOptions": {
+        "rules": {}
+    },
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": false,
+        "watch": false
+    },
+    "filesGlob": [
+        "app/**/*.ts",
+        "test/**/*.ts",
+        "typings/browser.d.ts"
+    ],
+    "files": [
+        "app/src/models/models.d.ts",
+        "typings/browser.d.ts",
+        "app/src/app/app.ts",
+        "app/src/main.ts",
+        "app/src/repositories/base/base.repo.ts",
+        "app/src/repositories/post/post.repo.ts",
+        "app/src/services/base/base.svc.ts",
+        "app/src/services/post/post.svc.ts",
+        "app/src/viewcontrols/base/base.vc.ts",
+        "app/src/viewcontrols/home/home.vc.ts",
+        "app/src/viewcontrols/newpost/newpost.vc.ts",
+        "app/src/viewcontrols/singlepost/singlepost.vc.ts"
+    ]
+}
