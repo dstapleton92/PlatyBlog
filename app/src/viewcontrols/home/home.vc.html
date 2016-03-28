@@ -1,4 +1,14 @@
 <h1>PlatyBlog</h1>
+<h3>My Friends</h3>
+<ul plat-control="plat-foreach" plat-context="friends">
+    <!--@context is the current context,-->
+    <!--@first is true/false depending on if this is the first entry in the array-->
+    <!--@last ...-->
+    <!--@even is true/false depending on if we are in an even index of the array-->
+    <!--@odd ...-->
+    <!--@index is the numeric value for the current index of the array-->
+    <li>{{@context}}: first?: {{@first}}, last?: {{@last}}, even?: {{@even}}, odd?: {{@odd}}, index: {{@index}}</li>
+</ul>
 <plat-button class="button-primary button-jumbo" plat-tap="goToCompose()">Compose</plat-button>
 <p>Alternatively, <plat-link plat-options="{ view: composeView }">click here</plat-link> to compose a new post.</p>
 <plat-foreach class="post-list" plat-context="posts">

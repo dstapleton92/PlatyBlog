@@ -9,7 +9,8 @@ export default class HomeViewControl extends BaseViewControl {
 
     context = {
         posts: <Array<models.IBlogPost>>[],
-        composeView: NewPostViewControl
+        composeView: NewPostViewControl,
+        friends: ['tyler', 'hillary']
     };
     
     constructor(private postRepo: PostRepository) { // step 3
