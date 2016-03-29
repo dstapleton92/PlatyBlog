@@ -1,4 +1,7 @@
+<plat-resources>
+    <injectable alias="formatter">formatter</injectable>
+</plat-resources>    
 <h1>{{post.title}}</h1>
 <h3>{{post.author}}</h3>
-<h3>{{post.createdAt}}</h3>
+<h3>{{@formatter.formatDate(post.createdAt)}}</h3>
 <p>{{post.content}}</p>

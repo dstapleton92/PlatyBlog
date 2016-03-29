@@ -1,3 +1,6 @@
+<plat-resources>
+    <injectable alias="formatter">formatter</injectable>
+</plat-resources>    
 <h1>PlatyBlog</h1>
 <h3>My Friends</h3>
 <ul plat-control="plat-foreach" plat-context="friends">
@@ -15,7 +18,7 @@
     <div class="post">
         <h1>{{title}}</h1>
         <h3>{{author}}</h3>
-        <h5>{{createdAt}}</h5>
+        <h5>{{@formatter.formatDate(createdAt)}}</h5>
         <plat-button class="button-secondary" plat-tap="readMore(id)">Read more...</plat-button>
     </div>
 </plat-foreach>
